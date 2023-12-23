@@ -105,9 +105,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    lighting(LED_R_Pin, read_button(Button_SW2_Pin));                                // SW2 按下时亮红灯
-    lighting(LED_G_Pin, read_button(Button_SW1_Pin));                                // SW1 按下时亮绿灯
-    lighting(LED_B_Pin, read_button(Button_SW1_Pin) && read_button(Button_SW2_Pin)); // SW1 和 SW2 同时按下时亮蓝灯
+    lighting(LED_R_Pin, !read_button(Button_SW1_Pin) && read_button(Button_SW2_Pin)); // SW2 按下时亮红灯
+    lighting(LED_G_Pin, read_button(Button_SW1_Pin) && !read_button(Button_SW2_Pin)); // SW1 按下时亮绿灯
+    lighting(LED_B_Pin, read_button(Button_SW1_Pin) && read_button(Button_SW2_Pin));  // SW1 和 SW2 同时按下时亮蓝灯
 
     /* USER CODE END WHILE */
 
