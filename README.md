@@ -1,17 +1,9 @@
-# STM32 Study: Button
+以下存储库将不再更新，仅作为历史提交存储库使用：
 
-这是一个简单的 STM32 学习项目，用于演示如何在按下不同按钮时控制 LED 灯的亮灭。
+- lc6464/STM32Study-Simple_LED
+- lc6464/STM32Study-Button
+- lc6464/STM32Study-Button.h
+- lc6464/STM32Study-OLED
 
-## 硬件要求
 
-- ZHKU 奇点战队 STM32F4 开发板
-
-## 功能说明
-SWx：按键，按下为 1
-x灯：LED 灯，亮为 1
-|  SW1  |  SW2  | 红灯  | 绿灯  | 蓝灯  |
-| :---: | :---: | :---: | :---: | :---: |
-|   0   |   0   |   0   |   0   |   0   |
-|   0   |   1   |   1   |   0   |   0   |
-|   1   |   0   |   0   |   1   |   0   |
-|   1   |   1   |   0   |   0   |   1   |
+这些存储库中的项目代码将会被移动到以下存储库：[lc6464/STM32Study](https://github.com/lc6464/STM32Study "GitHub: lc6464/STM32Study")
